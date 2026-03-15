@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 70px;
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.logo span {
+  color: #00ffe0;
+}
+
+nav a {
+  margin-left: 30px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00ffe0;
+  transform: translateY(-3px);
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+}
+
+.hero h1 {
+  font-size: 90px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.hero button {
+  width: 220px;
+  padding: 15px;
+  font-size: 16px;
+  background: #00ffe0;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.hero button:hover {
+  background: transparent;
+  color: #00ffe0;
+  border: 2px solid #00ffe0;
+  transform: scale(1.1);
+}
+
+/* ROADMAP */
+.roadmap {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 120px;
+}
+
+.card {
+  width: 280px;
+  padding: 40px;
+  background: #111;
+  transition: 0.4s;
+  border-left: 4px solid #00ffe0;
+}
+
+.card h2 {
+  font-size: 60px;
+  color: #00ffe0;
+}
+
+.card:hover {
+  transform: translateY(-20px) scale(1.05);
+  background: #161616;
+}
+
+/* PROJECTS */
+.projects {
+  padding: 120px;
+}
+
+.projects h1 {
+  font-size: 80px;
+  margin-bottom: 50px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.project {
+  position: relative;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.project:hover img {
+  transform: scale(1.2) rotate(2deg);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,255,224,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+}
+
+/* FOOTER */
+footer {
+  padding: 40px;
+  text-align: center;
+  background: #000;
+}

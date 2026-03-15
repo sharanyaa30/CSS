@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background: #0d0f14;
+  color: #d7dbe6;
+  overflow-x: hidden;
+}
+
+/* Desk-like texture */
+.bg-texture {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(122,162,247,0.06), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(158,206,106,0.05), transparent 45%);
+  z-index: -1;
+}
+
+/* HERO */
+.hero {
+  padding: 120px 10% 80px;
+}
+
+.hero h1 {
+  font-size: 54px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.role {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #8f96aa;
+  letter-spacing: 1px;
+}
+
+.intro {
+  margin-top: 28px;
+  max-width: 520px;
+  line-height: 1.7;
+  color: #b7bccb;
+}
+
+/* CORE CARDS */
+.core {
+  padding: 40px 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  padding: 26px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px;
+  transition: 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(122,162,247,0.4);
+  box-shadow: 0 0 30px rgba(122,162,247,0.08);
+}
+
+.card h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #aeb3c2;
+}
+
+/* WORK */
+.work {
+  padding: 80px 10%;
+}
+
+.work h2 {
+  font-size: 22px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.work-item {
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  transition: 0.3s;
+}
+
+.work-item:hover {
+  padding-left: 10px;
+}
+
+.title {
+  display: block;
+  font-size: 15px;
+  color: #eaefff;
+}
+
+.desc {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #8f96aa;
+}
+
+/* FOOTER */
+footer {
+  padding: 80px 10%;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+footer p {
+  font-size: 14px;
+  color: #8f96aa;
+}
+
+footer span {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #7aa2f7;
+}

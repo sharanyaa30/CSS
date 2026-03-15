@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #020617, #0f172a);
+  color: #e5e7eb;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(12px);
+  background: rgba(2,6,23,0.6);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  font-size: 14px;
+}
+
+.nav-links li:hover{
+    border: 2px solid white;
+}
+
+.btn {
+  background: #38bdf8;
+  color: #020617;
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+/* HERO */
+.hero {
+  padding: 160px 10% 120px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 56px;
+}
+
+.hero p {
+  margin-top: 14px;
+  color: #94a3b8;
+}
+
+/* STATUS CARDS */
+.status-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: rgba(255,255,255,0.04);
+  border-radius: 16px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  transition: 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 40px rgba(56,189,248,0.25);
+}
+
+/* IMPACT */
+.impact {
+  padding: 120px 10%;
+  text-align: center;
+}
+
+.impact-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 24px;
+}
+
+.impact-card {
+  background: rgba(255,255,255,0.03);
+  padding: 26px;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.impact-card span {
+  display: block;
+  margin-top: 8px;
+  color: #38bdf8;
+}
+
+.impact-card:hover {
+  transform: scale(1.05);
+}
+
+/* SOLUTIONS */
+.solutions {
+  padding: 120px 10%;
+  text-align: center;
+}
+
+.solution-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+  gap: 20px;
+}
+
+.solution {
+  padding: 22px;
+  background: rgba(56,189,248,0.15);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.solution:hover {
+  background: rgba(56,189,248,0.3);
+}
+
+/* FOOTER */
+footer {
+  padding: 40px;
+  text-align: center;
+  color: #94a3b8;
+}
